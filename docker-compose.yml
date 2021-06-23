@@ -1,9 +1,11 @@
 version: "3.7"
 services:
   web-server:
+    container_name: php-local-dev
     build:
-      dockerfile: php.Dockerfile
-      context: .
+      dockerfile: Dockerfile
+      context: ./
+    stdin_open: true
     restart: always
     volumes:
       - "./html/:/var/www/html/"
