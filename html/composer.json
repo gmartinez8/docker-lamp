@@ -1,0 +1,8 @@
+{
+    "name": "gustavo/dev",
+    "autoload": {
+        "psr-4": {
+            "AppName\\": "src/"
+        }
+    }
+}
