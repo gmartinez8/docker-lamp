@@ -12,6 +12,7 @@ services:
     ports:
       - "8080:80"
   mysql-server:
+    container_name: mysql-server-local-dev
     image: mysql:8.0.19
     restart: always
     environment:
@@ -20,6 +21,7 @@ services:
       - mysql-data:/var/lib/mysql
 
   phpmyadmin:
+    container_name: phpmyadmin-local-dev
     image: phpmyadmin/phpmyadmin:5.0.1
     restart: always
     environment:
